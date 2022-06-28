@@ -11,6 +11,8 @@ var roomsRouter = require('./routes/roomsRoutes');
 
 var app = express();
 
+var beats = { rock: 'scissors', scissors: 'paper', paper: 'rock' };
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
